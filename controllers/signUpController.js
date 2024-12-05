@@ -36,7 +36,7 @@ export const signUpController = async (req, res) => {
 
     // Generate token and verification link
     const token = generateJWTKey(name, email);
-    const verificationLink = `http://localhost:3001/verify/${token}`;
+    const verificationLink = `https://auth-back-fi0h.onrender.com/${token}`;
 
     // Save new user
     const newUser = new userVerifyModel({
